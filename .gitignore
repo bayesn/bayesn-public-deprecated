@@ -1,0 +1,18 @@
+BayeSNmodel/__pycache__/*
+.ipynb_checkpoints/*
+
+#Ignore any .py or .ipynb files on top level, except those prefixed with demo_
+/*.py
+/*.ipynb
+!/demo_*
+
+#Ignore any model files except specific ones
+BayeSNmodel/model_files/*
+!BayeSNmodel/model_files/README.md
+!BayeSNmodel/model_files/M20_model
+!BayeSNmodel/model_files/T21_model
+!BayeSNmodel/model_files/T21_partial-split_model
+
+#Ignore anything in BayeSNmodel/stan_files that isn't a .stan
+BayeSNmodel/stan_files/*
+!BayeSNmodel/stan_files/*.stan
