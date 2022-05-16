@@ -107,7 +107,7 @@ This will obtain the MAP estimate from fitting the Thorp et al. (2021) BayeSN mo
 ### Using BayeSN
 Most functionality is provided by the `bayesn_model.SEDmodel` class within the `BayeSNmodel` module. The important functions should have docstrings describing how everything works.
 
-An example Python script (`fit_sn.py`) is provided for fitting a single supernova light curve. Demo light curves from Mandel et al. (2022) and THorp et al. (2021) are also providen in `demo_lcs`, along with precomputed MCMC chains in `demo_outputs`. To fit SN2005iq using the Mandel et al. (2022) model, you would need to run:
+An example Python script (`fit_sn.py`) is provided for fitting a single supernova light curve. Demo light curves from Mandel et al. (2022) and Thorp et al. (2021) are also providen in `demo_lcs`, along with precomputed MCMC chains in `demo_outputs`. To fit SN2005iq using the Mandel et al. (2022) model, you would need to run:
 ```bash
   python fit_sn.py --model M20 --metafile demo_lcs/meta/M20_demo_meta.txt --filters BVRIYJH demo_lcs/CSP/sn2005iq__u_CSP_14_B_CSP_18_g_CSP_20_V_CSP_18_r_CSP_20_i_CSP_19_H_WIRC_2_H_RC_10_J_RC1_10_J_WIRC_2_Y_RC_21__CSP3_krisciunas17.Wstd_snana.dat .
 ```
