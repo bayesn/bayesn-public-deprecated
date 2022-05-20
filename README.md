@@ -61,24 +61,24 @@ To install the code, you just need to run:
 ```bash
 	pip install pysynphot
 ```
-You must then download some [data files](ftp://archive.stsci.edu/pub/hst/pysynphot/). An easy way to do this from the command line is to run:
+You must then download some [data files](https://ssb.stsci.edu/trds/tarfiles/). An easy way to do this from the command line is to run:
 ```bash
-	wget ftp://archive.stsci.edu/pub/hst/pysynphot/synphot*.tar.gz
+	for f in synphot{1..7}.tar.gz 
+	do 
+		wget https://ssb.stsci.edu/trds/tarfiles/$f
+		tar xzvf $f
+		rm $f
+	done
 ```
-Once you've downloaded these, untar them by running, e.g.,
-```bash
-	tar xvzf synphot1.tar.gz
-```
-and so on.
 
-Then, to use `pysynphot`, it needs to know how to find the files you just downloaded. It does this by referring to the environment variable `PYSYN_CDBS`. This variable needs to point to the `cdbs` subdirectory of the untarred file structure. To set this, if you untarred in the directory `/data/username/synphot/`, you'd run the following command in bash:
+Then, to use `pysynphot`, it needs to know how to find the files you just downloaded. It does this by referring to the environment variable `PYSYN_CDBS`. This variable needs to point to the `trds` subdirectory of the untarred file structure. To set this, if you untarred in the directory `/data/username/synphot/`, you'd run the following command in bash:
 ```bash
-	export PYSYN_CDBS=/data/username/synphot/grp/hst/cdbs/
+	export PYSYN_CDBS=/data/username/synphot/grp/redcat/trds/
 ```
 Alternatively, from within python, you can use the `os` module to set this at the top of a script:
 ```python
 	import os
-	os.environ["PYSYN_CDBS"] = "/data/username/synphot/grp/hst/cdbs/"
+	os.environ["PYSYN_CDBS"] = "/data/username/synphot/grp/redcat/trds/"
 ```
 NOTE: This should ideally be done before all other imports. So, if you're setting this within python, these lines should be placed at the very top. `pysynphot`, and modules using it, will need the environment variable to be set *at the time of import*.
 
