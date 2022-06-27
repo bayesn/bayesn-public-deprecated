@@ -10,7 +10,7 @@ This repository contains *preliminary* code which can be used to work with the B
  - Mandel K.S., Thorp S., Narayan G., Friedman A.S., Avelino A., 2022, [MNRAS](https://doi.org/10.1093/mnras/stab3496), [510, 3939](https://ui.adsabs.harvard.edu/abs/2022MNRAS.510.3939M/abstract)
  - Thorp S., Mandel K.S., Jones D.O., Ward S.M., Narayan G., 2021, [MNRAS](https://doi.org/10.1093/mnras/stab2849), [508, 4310](https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.4310T/abstract)
 
-If you make use of any code from this repository, please cite Mandel et al. (2022), as above. If you make use of the Thorp et al. (2021) models, please also cite that work.
+If you make use of any code from this repository, please cite Thorp et al. (2021) and Mandel et al. (2022), as above.
 
 This repository contains a small amount of demo data. If you make use of these data, please be sure to cite the original sources!
 
