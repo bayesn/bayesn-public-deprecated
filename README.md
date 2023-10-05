@@ -1,7 +1,6 @@
 # bayesn-public
-A place for the public BayeSN code
 
-*Please note: This is an experimental beta version of the code, made available for testing purposes only*
+*Please note: This version of the code should now be considered deprecated in favour of [the numpyro implementation](https://github.com/bayesn/bayesn) by Matt Grayling (@mattgrayling). The Stan-based code in this repository was an experimental beta version, made available for testing purposes only.*
 
 Developed and maintained by: Stephen Thorp (@stevet40), Gautham Narayan (@gnarayan), and Kaisey S. Mandel (@CambridgeAstroStat) on behalf of the BayeSN Team (@bayesn)
 
