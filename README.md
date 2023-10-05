@@ -1,4 +1,4 @@
-# bayesn-public
+# bayesn-public-deprecated
 
 *Please note: This version of the code should now be considered deprecated in favour of [the numpyro implementation](https://github.com/bayesn/bayesn) by Matt Grayling (@mattgrayling). The Stan-based code in this repository was an experimental beta version, made available for testing purposes only.*
 
